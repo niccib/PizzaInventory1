@@ -1,0 +1,10 @@
+﻿@model List<PizzaInventory1.Models.ItemCategory>
+<h1>Add Category</h1>
+
+<ul>
+    @foreach (var itemCategory in Model)
+    {
+        <li>@itemCategory.Name</li>
+    }
+</ul>
+<p><a asp-controller="Category" asp-action="Add">Add</a></p>
